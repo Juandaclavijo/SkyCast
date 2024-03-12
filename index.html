@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyCast</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/logoVentana.png"> 
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <a href="#" onclick="reiniciarPagina()">
+                    <img src="img/Logo.png" alt="Logo de la aplicación">
+                </a>
+            </div>
+            <form id="ciudad-form">
+                <p type="Agregar">Agregar una ciudad:</p>
+                <input type="text" id="buscador-ciudad" placeholder="NOMBRE DE LA CIUDAD...">
+                <input type="submit" value="Añadir">
+            </form>
+            <footer>
+                Desarrollado por Juan Clavijo para Alura Latam
+            </footer>
+        </div>
+    <section>
+        <div class="header">
+            <h2>
+                <span class="first-part">Todos</span> <span class="second-part">tus climas</span>
+            </h2>
+        
+            <div class="search-bar">
+                <input type="text" id="buscar-ciudad" placeholder="Buscar...">
+                <button onclick="buscarCiudad()">Buscar</button>
+            </div>
+        </div>
+    </section>
+        <div class="right">
+            <div id="cards-container"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
